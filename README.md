@@ -11,7 +11,9 @@ To run locally:
 //Make sure Mongodb is installed locally
 $ mvn clean compile exec:exec
 ```
-## How simple a TodoBackend app can be written in X and Y framework/tech stack 
+## How simple a TodoBackend app can be written in X and Y framework
+
+Just check the source code and table below
  
 | *Language/Platform* | *Implementation* | *Data Persistent* | *Line of Code* | 
 | --------------------------- | --------- | ----------- | -------------- |
