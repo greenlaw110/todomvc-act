@@ -1,4 +1,4 @@
-# act-todo-backend-mongodb
+# A TodoBackend Implementation in [ActFramework](http://actframework.org)
 
 Sample web application implements [todo-backend](http://www.todobackend.com/) using [ActFramework](http://actframework.org) and MongoDB.
 
