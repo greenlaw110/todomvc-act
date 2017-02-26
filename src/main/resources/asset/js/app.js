@@ -29,6 +29,7 @@ $(function () {
   if (!apiRootUrl) {
       apiRootUrl = "/todo";
   }
+  console.log({api: apiRootUrl});
   $("#api-root").hide();
 
   $("#target-info .target-url").text(apiRootUrl);

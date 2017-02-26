@@ -38,7 +38,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <act.version>0.6.0-SNAPSHOT</act.version>
     <act.morphia.version>0.6.0-SNAPSHOT</act.morphia.version>
-    <app.entry>todomvc.AppEntry</app.entry>
+    <app.entry>todomvc.Todo</app.entry>
   </properties>
 
   <licenses>
