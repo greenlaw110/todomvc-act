@@ -71,15 +71,15 @@ public class Todo extends MorphiaAdaptiveRecordWithLongId<Todo> {
 }
 ```
 
-We don't need to declare all fields presented on front end, e.g. `title`, `order` and even `completed`.
-The only reason we put `completed` here is because of 
-[this issue](https://github.com/TodoBackend/todo-backend-js-spec/issues/6) in the test spec
+We don't need to declare all fields presented on front end, e.g. `title`, `order` and even `completed`
+which is declared in the source code because of [this issue](https://github.com/TodoBackend/todo-backend-js-spec/issues/6) 
+in the test spec
  
-Now the `url` which is not a data to be persist into our data store, instead it is a derived
-property that concatenate the `GET` action URL path and the entity's id.  We relies on Morphia's
+Note the `url` is not part of the data to be persist into our data store, instead it is a derived 
+property that concatenate the `GET` action URL path and the entity's id. We relies on Morphia's
 `PostLoad` and `PostPersist` lifecycle callback method to init the property.
 
-### The service/controller inside an entity model?
+### The Service
 
 It is very unusual to get service class nested into the entity model class like what we did in this
 implementation:
@@ -172,7 +172,10 @@ private void addCorsHeader(Environment environment) {
 ```
 
 However we don't see any of these CORS relevant code in the ActFramework implementation. The only thing we've done
-is add `cors=true` in the [config file](https://github.com/greenlaw110/todomvc-act/blob/master/src/main/resources/conf/common/app.properties)
+is add `cors=true` in the 
+[config file](https://github.com/greenlaw110/todomvc-act/blob/master/src/main/resources/conf/common/app.properties)
+This is another cool stuff about Act, it integrates utilities supporting common features in a web app including CORS, 
+CSRF etc.
 
 In summary, ActFramework provides a flexible and powerful infrastructure that support creating RESTful service
 in a much simpler way. With ActFramework the developer just need to focus on business logic, not plumbing.
