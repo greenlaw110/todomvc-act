@@ -27,6 +27,9 @@ public class Todo extends MorphiaAdaptiveRecordWithLongId<Todo> {
     @Transient
     public String url;
 
+    // needs to define this property to make it comply with todobackend spec
+    public boolean completed;
+
     @PostLoad
     @PostPersist
     private void updateUrl() {
@@ -61,8 +64,12 @@ public class Todo extends MorphiaAdaptiveRecordWithLongId<Todo> {
         }
 
         @DeleteAction("{id}")
-        public void delete(long id) {
-            deleteById(id);
+        public void delete(Long id) {
+            if (null == id) {
+                drop();
+            } else {
+                deleteById(id);
+            }
         }
     }
 
