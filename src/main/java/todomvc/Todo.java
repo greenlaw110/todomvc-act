@@ -4,11 +4,13 @@ import act.Act;
 import act.controller.Controller;
 import act.db.morphia.MorphiaAdaptiveRecordWithLongId;
 import act.db.morphia.MorphiaDaoWithLongId;
+import act.handler.Produces;
 import act.route.Router;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.PostLoad;
 import org.mongodb.morphia.annotations.PostPersist;
 import org.mongodb.morphia.annotations.Transient;
+import org.osgl.http.H;
 import org.osgl.mvc.annotation.DeleteAction;
 import org.osgl.mvc.annotation.GetAction;
 import org.osgl.mvc.annotation.PatchAction;
@@ -32,6 +34,7 @@ public class Todo extends MorphiaAdaptiveRecordWithLongId<Todo> {
     }
 
     @Controller("/todo")
+    @Produces(H.MediaType.JSON)
     public static class Service extends MorphiaDaoWithLongId<Todo> {
 
         @PostAction
