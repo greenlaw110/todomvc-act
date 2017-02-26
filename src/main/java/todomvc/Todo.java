@@ -24,12 +24,18 @@ import static act.controller.Controller.Util.notFoundIfNull;
 @Entity(value = "todo", noClassnameStored = true)
 public class Todo extends MorphiaAdaptiveRecordWithLongId<Todo> {
 
+    // needs to define this property to make it comply with todobackend spec
+    // unless https://github.com/TodoBackend/todo-backend-js-spec/issues/6
+    // is accepted
+    public boolean completed;
+
+    // url is required as per backend test spec. However it is not required
+    // to put into the database. So we mark it as Transient property
     @Transient
     public String url;
 
-    // needs to define this property to make it comply with todobackend spec
-    public boolean completed;
-
+    // We will generate the derived property `url` after
+    // saving the model and loading the model
     @PostLoad
     @PostPersist
     private void updateUrl() {
