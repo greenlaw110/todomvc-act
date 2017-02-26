@@ -69,13 +69,14 @@ public class Todo extends MorphiaAdaptiveRecordWithLongId<Todo> {
             return save(todo);
         }
 
+        @DeleteAction
+        public void drop() {
+            super.drop();
+        }
+
         @DeleteAction("{id}")
         public void delete(Long id) {
-            if (null == id) {
-                drop();
-            } else {
-                deleteById(id);
-            }
+            deleteById(id);
         }
     }
 
