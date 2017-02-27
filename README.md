@@ -29,6 +29,7 @@ Just check the source code and table below
 | Golang | [Gin](https://github.com/savaki/todo-backend-gin) | Map in memory | 128 |
 | Golang | [stdlib](https://github.com/mforman/todo-backend-golang) | In memory data structure | 238 |
 | JavaScript/NodeJs | [express](https://github.com/dtao/todo-backend-express) | PostgreSql | 130 |
+| JavaScript/NodeJs | [Koa](https://github.com/selvakn/todo-backend-node-koa-redis) | Redis | 169 |
 | Python | [webpy](https://github.com/moredip/todo-backend-py) | Array in memory | 32 |
 | Python | [django](https://github.com/mihirk/todo-backend-django) | sqllite | 164 |
 | Ruby | [rails](https://github.com/hammerdr/todo-backend-rails) | PostgreSql | 311 |
