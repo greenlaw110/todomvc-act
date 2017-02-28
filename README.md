@@ -98,7 +98,7 @@ public class Todo extends MorphiaAdaptiveRecordWithLongId<Todo> {
     ....
 
     @Controller("/todo")
-    @Produces(H.MediaType.JSON)
+    @ResponseContentType(H.MediaType.JSON)
     public static class Service extends MorphiaDaoWithLongId<Todo> {
 
         @PostAction
