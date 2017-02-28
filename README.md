@@ -29,12 +29,14 @@ Just check the source code and table below
 | Golang | [Gin](https://github.com/savaki/todo-backend-gin) | Map in memory | 128 |
 | Golang | [stdlib](https://github.com/mforman/todo-backend-golang) | In memory data structure | 238 |
 | JavaScript/NodeJs | [express](https://github.com/dtao/todo-backend-express) | PostgreSql | 130 |
+| JavaScript/NodeJs | [Koa](https://github.com/selvakn/todo-backend-node-koa-redis) | Redis | 169 |
 | Python | [webpy](https://github.com/moredip/todo-backend-py) | Array in memory | 32 |
 | Python | [django](https://github.com/mihirk/todo-backend-django) | sqllite | 164 |
 | Ruby | [rails](https://github.com/hammerdr/todo-backend-rails) | PostgreSql | 311 |
-| PHP | [symfony2](https://github.com/oegnus/symfony2-todobackend) | sqlite | 130 (only count files in `src` dir) |
+| PHP | [symfony2](https://github.com/oegnus/symfony2-todobackend) | sqlite | 130 |
 | Haskell | [Snap](https://github.com/jhedev/todobackend-haskell/blob/master/todobackend-snap) | Sqlite | 98 | 
 | C#/.Net | [Asp.Net core](https://github.com/dstockhammer/todo-backend-aspnetcore) | ? (Entity Framework) |887 |
+| C#/.Net | [ASP.NET WebAPI 2](https://github.com/mforman/todo-backend-webapi) | In memory list | 215 |
 | Swift | [Kitura](https://github.com/IBM-Swift/todolist-mongodb) | MongoDB | 473 |
 
 ## How can ActFramework make it so clean?
