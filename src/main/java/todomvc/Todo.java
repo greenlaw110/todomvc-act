@@ -77,7 +77,7 @@ public class Todo extends MorphiaAdaptiveRecordWithLongId<Todo> {
     }
 
     public static void main(String[] args) throws Exception {
-        Act.start("TODO MVC", Todo.class);
+        Act.start("TODO MVC");
     }
 
 }
